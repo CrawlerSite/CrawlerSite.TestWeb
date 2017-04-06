@@ -25,6 +25,6 @@ app.engine('html', require('ejs').renderFile);
             res.render("index.html");
         });
 
-app.listen(port);
+app.listen(process.env.PORT);
 
-open('http://localhost:' + port);
+open('http://localhost:' + process.env.PORT);
