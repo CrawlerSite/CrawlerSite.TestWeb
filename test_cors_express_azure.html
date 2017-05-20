@@ -4,6 +4,8 @@
     $.get('//crawlerbackend.azurewebsites.net/api/Welcome', function(response){
         console.log(response);
 
-        document.write(JSON.stringify(response));
+        document.querySelector('#result').write(JSON.stringify(response));
     })
 </script>
+
+<div id="result"></div>

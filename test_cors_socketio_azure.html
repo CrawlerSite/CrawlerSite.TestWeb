@@ -5,6 +5,8 @@
         reconnectionAttempts : 1
     });
     socket.on('connect', function(){
-        document.write('Your now connected to WebSocket server');
+        document.querySelector('#result').write('Your now connected to WebSocket server');
     });
 </script>
+
+<div id="result"></div>
